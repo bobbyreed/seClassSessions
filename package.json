@@ -1,0 +1,15 @@
+{
+  "name": "seclasssessions",
+  "version": "1.0.0",
+  "description": "This is a readme.md",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-validate": "^9.7.1"
+  }
+}
