@@ -227,6 +227,76 @@ main {
     font-size: 1.1rem;
 }
 
+.section-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 3rem;
+    color: var(--color-grey-brown);
+    opacity: 0.9;
+}
+
+/* Features Grid */
+.features-section {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid var(--color-grey-blue);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    border-color: var(--color-mint);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: 1rem;
+    background-color: var(--color-mint);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border: 3px solid var(--color-grey-blue);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.feature-title {
+    font-size: 1.3rem;
+    color: var(--color-grey-brown);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.feature-description {
+    font-size: 1rem;
+    color: var(--color-grey-brown);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
 /* Footer */
 .footer {
     background-color: var(--color-grey-blue);
@@ -297,6 +367,22 @@ a {
     .section h2 {
         font-size: 1.5rem;
     }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .feature-icon {
+        font-size: 2.5rem;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+    }
+
+    .feature-title {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -336,5 +422,29 @@ a {
 
     main {
         padding: 1rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+
+    .feature-icon {
+        font-size: 2rem;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .feature-title {
+        font-size: 1.1rem;
+    }
+
+    .feature-description {
+        font-size: 0.95rem;
     }
 }
