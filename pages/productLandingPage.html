@@ -82,6 +82,63 @@
             </div>
         </section>
 
+        <section id="tracking-demo" class="section tracking-section">
+            <h2>Live Tracking Interface</h2>
+            <p class="section-intro">See exactly where they are. Because curiosity definitely didn't kill the cat tracker.</p>
+
+            <div class="tracking-container">
+                <div class="map-mockup">
+                    <div class="map-grid"></div>
+                    <div class="map-streets"></div>
+
+                    <!-- Cat location marker -->
+                    <div class="cat-marker">
+                        <div class="marker-pulse"></div>
+                        <div class="marker-dot"></div>
+                    </div>
+
+                    <!-- Map labels -->
+                    <div class="map-label" style="top: 20%; left: 15%;">Your House</div>
+                    <div class="map-label" style="top: 60%; left: 70%;">Neighbor's Yard</div>
+                    <div class="map-label forbidden" style="top: 45%; left: 40%;">FORBIDDEN ZONE</div>
+                </div>
+
+                <div class="tracking-sidebar">
+                    <div class="tracking-info">
+                        <h3>Current Status</h3>
+                        <div class="status-item">
+                            <span class="status-label">Location:</span>
+                            <span class="status-value">Somewhere Suspicious</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Activity:</span>
+                            <span class="status-value">Judging You</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Confidence:</span>
+                            <span class="status-value">95% shouldn't be here</span>
+                        </div>
+                    </div>
+
+                    <div class="legend">
+                        <h4>Map Legend</h4>
+                        <div class="legend-item">
+                            <span class="legend-dot blinking"></span>
+                            <span class="legend-text">Cat is 95% sure it shouldn't be here</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-dot static"></span>
+                            <span class="legend-text">Last known alibi location</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-square forbidden-zone"></span>
+                            <span class="legend-text">Unauthorized territory (your yard)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="how-it-works" class="section">
             <h2>How It Works</h2>
             <p>How It Works content coming soon...</p>
